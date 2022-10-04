@@ -6,7 +6,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 
  let tag = `@${m.sender.split('@')[0]}`
  let ftroli = { key: { remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: 9999999999, status: 1, surface: 1, message: `${command} ${type}`, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }
-  let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Maxxy-Md⸙;;;\nFN:Maxxy-Md⸙\nORG:Maxxy-Md⸙\nTITLE:\nitem1.TEL;waid=6285380166282:+62 853-8016-6282\nitem1.X-ABLabel:𝙆𝘼𝙃𝙁𝙄-𝙓𝘿⸙\nX-WA-BIZ-DESCRIPTION:${htjava} Tᴀᴋ ᴍᴇɴᴇʀɪᴍᴀ sᴀᴠᴇ ᴋᴏɴᴛᴀᴋ!!\nX-WA-BIZ-NAME:𝙆𝘼𝙃𝙁𝙄-𝙓𝘿⸙\nEND:VCARD`
+  let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;HENDRA-LUBECK🇮🇩⸙;;;\nFN:HENDRA-LUBECK🇮🇩⸙\nORG:HENDRA-LUBECK🇮🇩⸙\nTITLE:\nitem1.TEL;waid=6281227607864:+62 812-2760-7864\nitem1.X-ABLabel:𝙆𝘼𝙃𝙁𝙄-𝙓𝘿⸙\nX-WA-BIZ-DESCRIPTION:${htjava} Tᴀᴋ ᴍᴇɴᴇʀɪᴍᴀ sᴀᴠᴇ ᴋᴏɴᴛᴀᴋ!!\nX-WA-BIZ-NAME:𝙆𝘼𝙃𝙁𝙄-𝙓𝘿⸙\nEND:VCARD`
 //------- NOMOR
  const pp = fs.readFileSync('./media/own.jpg')
   let nowner1 = `${nomorown1.split`@`[0]}@s.whatsapp.net`
@@ -22,29 +22,37 @@ let teksnomor = (
 )
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown1 + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1])
-let teksbio = `┆⫹⫺ 💌 Nama : 𝙈𝙖𝙭𝙭𝙮-𝙓𝘿
+let teksbio = `┆⫹⫺ 💌 Nama : HENDRA LUBECK🇮🇩
 ┆⫹⫺ ✉️ Nama RL : HAMBA ALLAH
 ┆⫹⫺ ♂️ Gender : Pria
 ┆⫹⫺ 🕋 Agama : Islam
-┆⫹⫺ ⏰ Tanggal lahir : 16 - 10 - 2001
-┆⫹⫺ 🎨 Umur : 15
-┆⫹⫺ 🧮 Kelas : IX
-┆⫹⫺ 🧩 Hobby : 𝙼𝚘𝚍𝚒𝚏𝚒𝚔𝚊𝚜𝚒 𝚙𝚎𝚛𝚊𝚗𝚐𝚔𝚊𝚝 𝚕𝚞𝚗𝚊𝚔
+┆⫹⫺ ⏰ Tanggal lahir : xxxx
+┆⫹⫺ 🎨 Umur : xx
+┆⫹⫺ 🧮 Kelas : xx
+┆⫹⫺ 🧩 Hobby : xxxx
 ┆⫹⫺ 💬 Sifat : ASIK,BAIK,RAMAH
-┆⫹⫺ 🗺️ Tinggal : Indonesia, Aceh Timur 
+┆⫹⫺ 🗺️ Tinggal : Indonesia, Sumatra
 └––––––––––––·•
 `
 let ppown2 = await conn.profilePictureUrl(nomorown2 + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
-let teksbio2 = `┆⫹⫺ 💌 Nama : 𝙆𝘼𝙃𝙁𝙄-𝙓𝘿
-┆⫹⫺ ✉️ Nama RL : HAMBA ALLAH
+let teksbio2 = `┆⫹⫺ 💌 Nama : HENDRA LUBECK🇮🇩
+┆┆⫹⫺ ✉️ Nama RL : HAMBA ALLAH
+
 ┆⫹⫺ ♂️ Gender : Pria
+
 ┆⫹⫺ 🕋 Agama : Islam
-┆⫹⫺ ⏰ Tanggal lahir : 07 - 05 - 2000
-┆⫹⫺ 🎨 Umur : 15
-┆⫹⫺ 🧮 Kelas : IX
-┆⫹⫺ 🧩 Hobby : Game Mobile legend 
+
+┆⫹⫺ ⏰ Tanggal lahir : xxxx
+
+┆⫹⫺ 🎨 Umur : xx
+
+┆⫹⫺ 🧮 Kelas : xx
+
+┆⫹⫺ 🧩 Hobby : xxxx
+
 ┆⫹⫺ 💬 Sifat : ASIK,BAIK,RAMAH
-┆⫹⫺ 🗺️ Tinggal : Indonesia, Aceh Timur 
+
+┆⫹⫺ 🗺️ Tinggal : Indonesia, Sumatra
 └––––––––––––·•
 `
 
@@ -109,7 +117,7 @@ await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard
             case 'bio':
           //conn.sendHydrated(m.chat, teksbio, wm, ppown, sig, "📷 Instagram", nomorown, '🌹 Nomor', [[null, null], [null, null],[null,null]], m)
 
-   conn.sendButton(m.chat, '┍┈༺ *𝙱𝚒𝚘𝙳𝚊𝚝𝚊 𝙈𝙖𝙭𝙭𝙮-𝙓𝘿* ༻', teksbio, ppown, [
+   conn.sendButton(m.chat, '┍┈༺ *𝙱𝚒𝚘𝙳𝚊𝚝𝚊 hendra-𝙓𝘿* ༻', teksbio, ppown, [
                 ['Sewa Bot', `${usedPrefix}sewa`],
                 ['Menu', `${usedPrefix}menu`]
             ], m)
@@ -117,7 +125,7 @@ await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard
                         case 'bio2':
           //conn.sendHydrated(m.chat, teksbio, wm, ppown, sig, "📷 Instagram", nomorown, '🌹 Nomor', [[null, null], [null, null],[null,null]], m)
 
-          conn.sendButton(m.chat, '┍┈༺ *𝙱𝚒𝚘𝙳𝚊𝚝𝚊 𝙆𝘼𝙃𝙁𝙄-𝙓𝘿* ༻', teksbio2, ppown2, [
+          conn.sendButton(m.chat, '┍┈༺ *𝙱𝚒𝚘𝙳𝚊𝚝𝚊 HENDRA LUBECK🇮🇩* ༻', teksbio2, ppown2, [
                 ['Sewa Bot', `${usedPrefix}sewa`],
                 ['Menu', `${usedPrefix}menu`]
             ], m)
